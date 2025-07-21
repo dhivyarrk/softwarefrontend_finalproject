@@ -15,10 +15,10 @@
 </head>
 <body>
   <header>
-    
-    <img src="Images/logo.png" alt="Infinity Logo" class="logo" />
-    <h1>Infinity Cosmetics</h1>
-
+    <div class="brand">
+      <img src="Images/logo.png" alt="Infinity Logo" class="logo" />
+      <h1>Infinity Cosmetics</h1>
+    </div>
     <nav>
       <a href="#">Home</a>
       <a href="#">Products</a>
@@ -27,6 +27,7 @@
     </nav>
   </header>
 
+  <!-- Hero -->
   <section class="hero">
     <h1>Discover Beauty with <span>Infinity</span></h1>
     <p>Explore our exclusive cosmetic collection made to match your style.</p>
@@ -63,6 +64,19 @@
     </div>
   </main>
 
+  <!-- Video Section -->
+  <section class="video-section bg-black">
+    <div class="container-sm">
+      <h2 class="video-heading">Your beauty, Your canvas!</h2>
+      <div class="video-content">
+        <video controls class="video-player">
+          <source src="Images/video.mp4" type="video/mp4" />
+        </video>
+        <a href="#" class="btn btn-primary">Get Started</a>
+      </div>
+    </div>
+  </section>
+  
   <!-- Footer -->
 <footer>
   <div class="container">
@@ -100,9 +114,10 @@
       </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    © 2025 Infinity Cosmetics. All rights reserved.
-  </div>
+  <div class="footer-bottom container-sm">
+  &copy; 2025 Infinity Cosmetics. All rights reserved.
+</div>
+
 </footer>
 
   <script src="javascript/main.js"></script>

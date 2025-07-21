@@ -15,10 +15,22 @@ header {
   align-items: center;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px; 
+  height: auto;
+  display: block;
+}
+
 header h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
   margin: 0;
-  font-weight: 700;
-  letter-spacing: 2px;
 }
 
 nav a {
@@ -146,6 +158,53 @@ main {
   background-color: #ff79a3;
 }
 
+/* Video Section */
+.video-section {
+  background-color: #fff0f5;
+  padding: 4rem 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.video-heading {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-inline: auto;
+  line-height: 1.4;
+  color: #d63384;
+}
+
+.video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.video-player {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.video-section .btn-primary {
+  background-color: #d63384;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.video-section .btn-primary:hover {
+  background-color: #b02a6d;
+}
+
+
 /* Footer */
 footer {
   background-color: #fff0f5;
@@ -240,7 +299,6 @@ footer {
   background-color: #b02a6d;
 }
 
-/* Social Icons (assuming Font Awesome is included) */
 footer i.fab {
   font-size: 1.5rem;
   margin-right: 0.8rem;
@@ -253,11 +311,10 @@ footer i.fab:hover {
   color: #b02a6d;
 }
 
-.footer-bottom {
+.container-sm {
   text-align: center;
-  background: #d6336c;
-  color: white;
-  padding: 15px;
-  font-size: 0.9rem;
-  margin-top: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
+
