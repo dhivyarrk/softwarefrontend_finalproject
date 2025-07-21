@@ -33,6 +33,63 @@ nav a:hover {
   color: #ff79a3;
 }
 
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #ffe4ec, #f8f0ff);
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: #d63384;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  background-color: #d63384;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #b02a6d;
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  background-color: #fff;
+  color: #d63384;
+  border: 2px solid #d63384;
+}
+
+.btn.secondary:hover {
+  background-color: #fce4f1;
+}
+
 main {
   max-width: 1000px;
   margin: 40px auto;
