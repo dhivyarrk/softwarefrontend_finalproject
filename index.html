@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinity Cosmetics</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Infinity Cosmetics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="shortcut icon" href="Images/logo.jpeg" type="image/x-icon" />
-    
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
 </head>
 <body>
+  <header>
+    
+    <img src="Images/logo.png" alt="Infinity Logo" class="logo" />
     <h1>Infinity Cosmetics</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Cart</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="product-card" data-product="Velvet Lipstick" data-price="19.99">
+      <img src="Images/lipgloss.jpeg" alt="Velvet Lipstick" />
+      <h3>Velvet Lipstick</h3>
+      <p>£19.99</p>
+      <button class="btn-add">Add to Cart</button>
+    </div>
+    <div class="product-card" data-product="Liquid Foundation" data-price="29.99">
+      <img src="Images/foundation.jpeg" alt="Liquid Foundation" />
+      <h3>Liquid Foundation</h3>
+      <p>£29.99</p>
+      <button class="btn-add">Add to Cart</button>
+    </div>
+    <div class="product-card" data-product="EyeLiner" data-price="15.99">
+      <img src="Images/eyeliner.jpeg" alt="EyeLiner" />
+      <h3>Rose Blush</h3>
+      <p>£15.99</p>
+      <button class="btn-add">Add to Cart</button>
+    </div>
+    <div class="product-card" data-product="Volume Mascara" data-price="22.99">
+      <img src="Images/mascara.jpeg" alt="Volume Mascara" />
+      <h3>Volume Mascara</h3>
+      <p>£22.99</p>
+      <button class="btn-add">Add to Cart</button>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Infinity Cosmetics. All rights reserved.
+  </footer>
+
+  <script src="javascript/main.js"></script>
 </body>
 </html>
