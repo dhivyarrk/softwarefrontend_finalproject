@@ -45,10 +45,11 @@ nav a:hover {
   color: #ff79a3;
 }
 
+ /* Hero */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(to right, #ffe4ec, #f8f0ff);
+  background: #fff0f5;
   color: #333;
 }
 
@@ -163,7 +164,7 @@ main {
   background-color: #fff0f5;
   padding: 4rem 1rem;
   text-align: center;
-  color: #fff;
+  color:#ffe4ec;
 }
 
 .video-heading {
@@ -192,7 +193,7 @@ main {
 
 .video-section .btn-primary {
   background-color: #d63384;
-  color: #fff;
+  color: #ffe4ec;
   padding: 0.8rem 1.6rem;
   border-radius: 2rem;
   font-weight: 600;
@@ -204,6 +205,125 @@ main {
   background-color: #b02a6d;
 }
 
+/* Testimonials */
+.testimonials {
+  padding: 2rem 0rem;
+  background-color: #fff0f5;
+  color: white;
+  text-align: center;
+}
+
+.testimonial-box {
+  background-color: #ffe4ec;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.testimonials .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.testimonials-heading {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #b02a6d;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonials .card {
+  background: #d6336c;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  font-style: italic;
+}
+
+.testimonials .card p:last-child {
+  font-style: normal;
+  opacity: 0.75;
+  font-size: 0.9rem;
+}
+
+/* FAQ */
+.faq {
+  padding: 40px 20px;
+  background-color: #fff0f5;
+  font-family: Arial, sans-serif;
+}
+
+.faq h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #b02a6d
+}
+
+.faq .faq-menu {
+  max-width: 400px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-between;
+  background: #d6336c;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.faq .faq-menu li {
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #f4ecf0;
+}
+
+.faq .faq-menu li.active {
+  background-color: #f2e8ed;
+  color: #b02a6d;
+}
+
+.faq .faq-group {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.faq .faq-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.faq .faq-group-header h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.faq .faq-group-header i {
+  font-size: 18px;
+  color: #b02a6d;
+  transition: transform 0.3s ease;
+}
+
+.faq .faq-group-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 10px;
+}
+
+.faq .faq-group-body.open {
+  max-height: 200px; /* Adjust based on expected content */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 /* Footer */
 footer {

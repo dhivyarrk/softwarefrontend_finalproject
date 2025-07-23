@@ -7,3 +7,22 @@ document.querySelectorAll('.btn-add').forEach(button => {
     alert(`Added "${product}" to cart for $${price}`);
   });
 });
+
+// FAQ Toggle Functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const faqHeaders = document.querySelectorAll(".faq-group-header");
+
+  faqHeaders.forEach(header => {
+    header.addEventListener("click", () => {
+      const body = header.nextElementSibling;
+      const icon = header.querySelector("i");
+
+      // Toggle visibility
+      body.classList.toggle("open");
+
+      // Toggle icon
+      icon.classList.toggle("fa-plus");
+      icon.classList.toggle("fa-minus");
+    });
+  });
+});
