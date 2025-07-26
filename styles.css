@@ -438,3 +438,92 @@ footer i.fab:hover {
   padding: 0 1rem;
 }
 
+/* Hamburger Button */
+.hamburger-button {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px;
+  z-index: 999;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #d6336c; /* Match your site theme */
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #d6336c; /* Pink theme */
+  width: 220px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  z-index: 998;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu.show {
+  display: block;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  padding: 14px 20px;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.mobile-menu ul li:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* Soft highlight */
+}
+
+.mobile-menu ul li a {
+  color: white; /* Match pink background */
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu ul li a:hover {
+  color: #ffe0ec; /* Lighter pink highlight */
+}
+
+.mobile-menu ul li a.btn {
+  background-color: white;
+  color: #d6336c;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mobile-menu ul li a.btn:hover {
+  background-color: #ffe0ec;
+  color: #d6336c;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .hamburger-button {
+    display: flex;
+  }
+
+  nav ul {
+    display: none; /* Hide main menu */
+  }
+}
